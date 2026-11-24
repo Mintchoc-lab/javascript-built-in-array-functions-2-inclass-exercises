@@ -20,4 +20,6 @@ const guestList = [
   "Daniel",
 ];
 
+const organizeSeat = (guestList, startSeatNo, numberOfGuest) => guestList.splice(2,6);
+
 console.log(organizeSeat(guestList, 0, 2)); // [ 'Michael', 'Emma', 'David', 'Sophia', 'Daniel' ]

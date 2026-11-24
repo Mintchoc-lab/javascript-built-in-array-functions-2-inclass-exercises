@@ -19,5 +19,10 @@ const guestList = [
   "Daniel",
 ];
 
+const availableSeat = (guestList, number) => guestList.slice(0, number);
+
 console.log(availableSeat(guestList, 2)); // [ 'John', 'Sarah' ]
 console.log(availableSeat(guestList, 4)); // [ 'John', 'Sarah', 'Michael', 'Emma' ]
+
+// slice() = เลือกข้อมูลบางส่วน โดยไม่แก้ไข Array ต้นฉบับ
+// splice() = เพิ่ม ลบ หรือแทนที่ข้อมูลใน Array ต้นฉบับ
